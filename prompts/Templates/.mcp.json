@@ -1,0 +1,32 @@
+{
+  "mcpServers": {
+    "testrail": {
+      "command": "npx",
+      "args": ["@bun913/mcp-testrail@latest"],
+      "env": {
+        "TESTRAIL_URL": "https://<host>.io",
+        "TESTRAIL_USERNAME": "<email>",
+        "TESTRAIL_API_KEY": "<key>"
+      }
+    },
+    "figma": {
+      "type": "http",
+      "url": "https://mcp.figma.com/mcp"
+    },
+    "mcp_server_mysql": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["@benborla29/mcp-server-mysql"],
+      "env": {
+        "MYSQL_HOST": "<host>",
+        "MYSQL_PORT": "3306",
+        "MYSQL_USER": "<user>",
+        "MYSQL_PASS": "<pass>",
+        "ALLOW_INSERT_OPERATION": "true",
+        "ALLOW_UPDATE_OPERATION": "true",
+        "ALLOW_DELETE_OPERATION": "true",
+        "MYSQL_DB": "<database>"
+      }
+    }
+  }
+}
