@@ -27,6 +27,42 @@
         "ALLOW_DELETE_OPERATION": "true",
         "MYSQL_DB": "<database>"
       }
+    },
+    "mcp-atlassian": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "CONFLUENCE_URL",
+        "-e",
+        "CONFLUENCE_PERSONAL_TOKEN",
+        "-e",
+        "CONFLUENCE_SSL_VERIFY=false",
+        "-e",
+        "JIRA_URL",
+        "-e",
+        "JIRA_USERNAME",
+        "-e",
+        "JIRA_API_TOKEN",
+        "-e",
+        "JIRA_SSL_VERIFY=false",
+        "-e",
+        "READ_ONLY_MODE=true",
+        "ghcr.io/sooperset/mcp-atlassian:latest"
+      ],
+      "env": {
+        "CONFLUENCE_URL": "<confluence-url>",
+        "CONFLUENCE_PERSONAL_TOKEN": "<personal-token>",
+        "JIRA_URL": "<jira_url>",
+        "JIRA_USERNAME": "<username>",
+        "JIRA_API_TOKEN": "<api-token>"
+      }
+    },
+    "playwright": {
+      "command": "npx",
+      "args": ["@playwright/mcp@latest"]
     }
   }
 }
