@@ -63,6 +63,12 @@
     "playwright": {
       "command": "npx",
       "args": ["@playwright/mcp@latest"]
+    },
+    "ssh-mcp": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["ssh-mcp", "--host=<host>", "--user=<user>", "--password=<pass>"],
+      "env": {}
     }
   }
 }
