@@ -1,6 +1,6 @@
 # prompt-aing
 
-Prompts for ai agents, optimized for [ClaudeCode](https://code.claude.com/docs/en/overview)
+Prompts for AI agents, optimized for [ClaudeCode](https://code.claude.com/docs/en/overview)
 
 [Agent Repository](https://github.com/VoltAgent/awesome-claude-code-subagents)
 
