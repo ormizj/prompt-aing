@@ -2,7 +2,7 @@
     ```markdown
      /init
     ```
-2. initialize agent usage
+2. initialize agent usage (use after adding needed agents)
     ```markdown
     update CLAUDE.md documentation to ensure that all agents are being used, when they are needed, here is an example
     structure:
