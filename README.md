@@ -34,4 +34,20 @@ The goal is to differentiate the invocation method:
 - **Skills: Claude-invoked** _(flexible, user can also invoke manually)_
 - **Commands: User-invoked** _(strictly, agent CANNOT invoke at all)_
 
+### Implementation Differences (skills must be within a directory)
+
+#### Skills
+
+- `skills`
+    - `my-skill.md` _**(This skill WILL NOT be recognized and WILL NOT work)**_
+    - `my-skill`
+        - `SKILL.md`
+
+#### Commands
+
+- `commands`
+    - `my-command.md` _**(This skill WILL be recognized and WILL work)**_
+    - `my-command`
+        - `SKILL.md`
+
 ---
