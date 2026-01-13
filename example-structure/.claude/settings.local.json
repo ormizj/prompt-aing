@@ -1,8 +1,21 @@
 {
   "permissions": {
-    "allow": []
+    "allow": [
+      "Bash(npm run lint-fix)",
+      "Bash(npm run lint-ts)"
+    ]
   },
-  "enableAllProjectMcpServers": true,
-  "enabledPlugins": {},
-  "outputStyle": "default"
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r '\"\\(.tool_input.command) - \\(.tool_input.description // \"No description\")\"' >> ~/.claude/bash-command-log.txt"
+          }
+        ]
+      }
+    ]
+  }
 }

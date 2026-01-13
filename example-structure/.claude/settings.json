@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": []
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledPlugins": {},
+  "outputStyle": "default"
+}
